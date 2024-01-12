@@ -1,4 +1,3 @@
-/* eslint-disable*/
-export default function getStudentsByLocation(getListStudents, city) {
-  return getListStudents.filter((item) => item.location === city);
+export default function getStudentIdsSum(list) {
+  return list.reduce((accumulator, currentValue) => accumulator + currentValue.id, 0);
 }
