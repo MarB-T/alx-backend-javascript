@@ -4,8 +4,7 @@ process.stdin.on('readable', () => {
   const input = process.stdin.read();
 
   if (input) {
-    name = input.toString().trim();
-    process.stdout.write(`Your name is: ${name}\n`);
+    process.stdout.write(`Your name is: ${input}`);
   }
 });
 
